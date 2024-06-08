@@ -36,7 +36,7 @@ const getDateTime = (dt)=>{
 
 }
 
-let city = "wah cantt";
+let city = "Islamabad";
 
 // search Functionality:
 citySearch.addEventListener("submit", (event) =>{
@@ -45,6 +45,7 @@ citySearch.addEventListener("submit", (event) =>{
     console.log(cityName.value);
     city = cityName.value;
     getWeatherData();
+    cityName.value = "";
 
 })
 
